@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AlbumService } from './data/album.service';
 import { InMemoryDataService } from './data/in-memory-data/in-memory-data.service';
 
 @NgModule({
@@ -8,6 +7,6 @@ import { InMemoryDataService } from './data/in-memory-data/in-memory-data.servic
     CommonModule
   ],
   declarations: [],
-  providers: [AlbumService, InMemoryDataService]
+  providers: [InMemoryDataService]
 })
 export class CoreModule { }
