@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InMemoryDataService } from './data/in-memory-data/in-memory-data.service';
+import { InMemoryAlbumService } from './data/in-memory-data/in-memory-album.service';
+import { AlbumService } from './data/album.service';
+import { HttpClientModule } from '@angular/common/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forFeature(InMemoryAlbumService)
   ],
   declarations: [],
-  providers: [InMemoryDataService]
+  providers: [InMemoryAlbumService, AlbumService]
 })
 export class CoreModule { }
