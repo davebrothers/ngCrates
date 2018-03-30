@@ -15,7 +15,8 @@ export class AlbumService {
   getAlbums(): Observable<Album[]> {
     return this.http.get<Album[]>(this.albumsUrl)
       .pipe(
-        tap(albums => console.log(albums))
+        tap(albums => console.log(albums)),
+        catchError(this.handleError('getAlbums', []))
       );
   }
 
