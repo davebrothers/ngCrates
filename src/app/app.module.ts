@@ -10,6 +10,7 @@ import { CoreModule } from './core/core.module';
 import { AlbumCardComponent } from './album-card/album-card.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule, MatGridListModule } from '@angular/material';
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

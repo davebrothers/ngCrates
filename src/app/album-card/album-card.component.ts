@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatCard } from '@angular/material/card';
+import { MatButton, MatCard } from '@angular/material';
 import { Album } from '../core/models/album';
 
 @Component({
@@ -8,8 +8,15 @@ import { Album } from '../core/models/album';
   styleUrls: ['./album-card.component.css']
 })
 export class AlbumCardComponent implements OnInit {
-  @Input() album;
+  @Input() album: Album;
+  
+  public avatarImage: string = "/assets/img/Vinyl_record.svg";
+  
   constructor() { }
+
+  seeOnDiscogs() {
+    window.location.href = this.album.discogsMasterReleaseUrl.toString();
+  }
 
   ngOnInit() {
   }
