@@ -8,6 +8,7 @@ import { AlbumListComponent } from './album-list/album-list.component';
 import { CoreModule } from './core/core.module';
 import { AlbumCardComponent } from './album-card/album-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     AlbumListComponent,
     AlbumCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlbumDetailComponent
   ],
   imports: [
     AppRoutingModule,

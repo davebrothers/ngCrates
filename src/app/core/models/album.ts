@@ -1,7 +1,8 @@
 import { Url } from "url";
 
 export class Album {
-    constructor(public title: string, 
+    constructor(public title: string,
+        public id: number, 
         public artist: string,
         public coverImage: Url,
         public releaseYear: number,
