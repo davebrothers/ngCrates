@@ -1,0 +1,7 @@
+{
+  "css": {
+    "style": [
+      "src/assets/styles/bootstrap.css"
+    ]
+  }
+}

@@ -1,25 +1,8 @@
-<mat-card class="album-card">
-  <mat-card-header>
-    <img mat-card-avatar [src]="avatarImage" />
-    <mat-card-title>
-      {{album.title}}
-    </mat-card-title>
-    <mat-card-subtitle>
-      {{album.artist}}
-    </mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image [src]="album.coverImage" [alt]="album.title" [title]="album.title"/>
-  <mat-card-content>
-    <p>{{album.releaseYear}}</p>
-      <!-- <div *ngFor="let track of album.tracks">
-        <mat-card>
-          <mat-card-content>
-            {{track}}
-          </mat-card-content>
-        </mat-card>
-      </div> -->
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button (click)="seeOnDiscogs()">SEE ON DISCOGS</button>
-  </mat-card-actions>
-</mat-card>
+<div class="card" style="width: 22rem;">
+    <img class="card-img-top" [src]="album.coverImage" alt="album.title">
+    <div class="card-body">
+      <h5 class="card-title">{{album.title}}</h5>
+      <p class="card-text">{{album.artist}}</p>
+      <a [href]="album.discogsMasterReleaseUrl" class="btn btn-primary">View on Discogs</a>
+    </div>
+  </div>

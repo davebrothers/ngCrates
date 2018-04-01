@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatButton, MatCard } from '@angular/material';
 import { Album } from '../core/models/album';
 
 @Component({

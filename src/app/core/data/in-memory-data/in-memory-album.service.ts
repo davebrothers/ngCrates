@@ -101,7 +101,7 @@ export class InMemoryAlbumService implements InMemoryDbService{
         discogsMasterReleaseUrl: 'https://www.discogs.com/Emmylou-Harris-Roses-In-The-Snow/master/154842'
     },
       { id: 6, 
-        title: 'Greeting from Asbury Park, N.J.', 
+        title: 'Greetings from Asbury Park, N.J.', 
         artist: 'Bruce Springsteen',
         coverImage: 'https://img.discogs.com/XkSLr44tGqzInWALkbCqJOECvfA=/fit-in/594x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2683678-1485008857-9080.jpeg.jpg',
         releaseYear: 1973,
